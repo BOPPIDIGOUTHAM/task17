@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input:active ~ .img1{
+            transform:translate(20px,40px);
+          
+            background-color: aquamarine;  
+            transform: perspective(300px) translate(30px) scale(5)  rotate(60deg) ;
+            display: block;}
+     
+    input:active ~ .img2{
+           background-color: aquamarine;  
+           transform:translateY(30px);
+           display: block;}
+
+        
+       .t img{  height:100px;
+            width: 100px;
+           display: none;
+            
+    }
+    input:active ~ .img3{
+         transform:scaleY(2.5);
+        background-color: rgb(180, 127, 255);  
+        display: block;}
+
+    input:active ~ .img4{
+         transform:rotate(60deg);
+        background-color: rgb(180, 127, 255);  
+        display: block;}
+
+    input:active ~ .img5{
+         transform:skewX(45deg);
+        background-color: rgb(180, 127, 255);  
+        display: block;}
+
+
+    </style>
+</head>
+<body>
+    <div class="t"><input type="radio" >prospective<img class="img1" src="https://images.unsplash.com/photo-1426024084828-5da21e13f5dc?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGhvbmUlMjB0YWJsZXQlMjBsYXB0b3B8ZW58MHx8MHx8fDA%3D"alt=""></div>
+    <div calss="t"><input type="radio" >translate<br><img class="img2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf7YcN63QrnuIJG4hX6JNHieJ3GZUHx33gIg&usqp=CAU" alt=""></div>
+    <div class="t"><input type="radio">scale <br><img class="img3" src="https://www.chess.com/bundles/web/images/offline-play/standardboard.1d6f9426.png" alt=""></div>
+    <div class="t"><input type="radio">rotate<img class="img4" src="https://cyber-fox.net/wp-content/uploads/2022/03/3d-model-from-a-picture.jpg.webp" alt=""></div>
+    <div class="t"><input type="radio">skew <br><img class="img5" src="https://media.istockphoto.com/id/1215274990/photo/high-wide-angle-view-of-charminar-in-the-night.jpg?s=612x612&w=0&k=20&c=byyIjqgbslf-L191n6SJu0s35fvNoVeWsxV5rIPK7Sk=" alt=""></div>
+</body>
+</html>
